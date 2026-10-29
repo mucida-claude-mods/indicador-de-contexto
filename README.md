@@ -15,7 +15,7 @@ Com o cache de prompt quente, reler o contexto é barato (no Opus 5.5, $0,20 por
 
 ## Instalar
 ```bash
-git clone https://github.com/OWNER/indicador-de-contexto ~/.claude/mods/indicador-de-contexto
+git clone https://github.com/Mucida/indicador-de-contexto ~/.claude/mods/indicador-de-contexto
 ```
 Acrescente o caminho em `CLAUDE_CODE_PLUGIN_DIRS` (em `env` no `~/.claude/settings.json`; vários caminhos separados por `:`).
 
