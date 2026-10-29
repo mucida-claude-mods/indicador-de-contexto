@@ -1,0 +1,25 @@
+{
+  "name": "indicador-de-contexto",
+  "version": "0.3.0",
+  "description": "Mostra o contexto a partir de 200k; aos 250k pede ao modelo que, no próximo ponto de transição, proponha dividir o resto se ainda falta trabalho grande e separável; aos 400k, que proponha /compact com foco, chat novo ou continuar (se falta pouco). Avisos uma vez por nível, reiniciados depois de /compact. /foco-compact entrega o texto pronto.",
+  "userConfig": {
+    "nivel_silencioso": {
+      "type": "number",
+      "title": "Nível silencioso (tokens)",
+      "description": "A partir daqui só a linha de status mostra o contexto; o modelo não recebe nada.",
+      "default": 200000
+    },
+    "nivel_avaliacao": {
+      "type": "number",
+      "title": "Nível de avaliação (tokens)",
+      "description": "O modelo recebe uma vez o pedido de, no próximo ponto de transição, propor dividir o resto do trabalho se ainda falta algo grande e separável.",
+      "default": 250000
+    },
+    "nivel_reavaliacao": {
+      "type": "number",
+      "title": "Nível de reavaliação (tokens)",
+      "description": "Teto: o modelo recebe uma vez o pedido de propor /compact com foco, chat novo ou continuar (se falta pouco).",
+      "default": 400000
+    }
+  }
+}
