@@ -1,7 +1,18 @@
 {
   "name": "indicador-de-contexto",
   "version": "0.3.0",
-  "description": "Mostra o contexto a partir de 200k; aos 250k pede ao modelo que, no próximo ponto de transição, proponha dividir o resto se ainda falta trabalho grande e separável; aos 400k, que proponha /compact com foco, chat novo ou continuar (se falta pouco). Avisos uma vez por nível, reiniciados depois de /compact. /foco-compact entrega o texto pronto.",
+  "description": "Watches the chat's context size: shows it from 200k; at 250k asks the model to propose splitting the rest of the work at the next transition point if something big and separable is left; at 400k, to propose a focused /compact, a new chat or carrying on. Each warning fires once per level and resets after /compact. /foco-compact hands you the compact text.",
+  "author": {
+    "name": "Lucas Mucida",
+    "url": "https://github.com/mucida-claude-mods"
+  },
+  "repository": "https://github.com/mucida-claude-mods/indicador-de-contexto",
+  "license": "MIT",
+  "keywords": [
+    "context",
+    "compact",
+    "tokens"
+  ],
   "userConfig": {
     "nivel_silencioso": {
       "type": "number",

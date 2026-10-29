@@ -1,0 +1,16 @@
+{
+  "name": "indicador-de-contexto",
+  "owner": {
+    "name": "Lucas Mucida"
+  },
+  "metadata": {
+    "description": "indicador-de-contexto: a Claude Code mod."
+  },
+  "plugins": [
+    {
+      "name": "indicador-de-contexto",
+      "source": "./",
+      "description": "Watches the chat's context size: shows it from 200k; at 250k asks the model to propose splitting the rest of the work at the next transition point if something big and separable is left; at 400k, to propose a focused /compact, a new chat or carrying on. Each warning fires once per level and resets after /compact. /foco-compact hands you the compact text."
+    }
+  ]
+}
